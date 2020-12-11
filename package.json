@@ -25,5 +25,6 @@
     "@tailwindcss/custom-forms": "0.2.1",
     "browser-sync": "2.26.12",
     "tailwindcss": "1.9.6",
+    "tailwind-bootstrap-grid": "3.1.0"
   }
 }

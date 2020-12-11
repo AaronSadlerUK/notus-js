@@ -1,4 +1,7 @@
 module.exports = {
+  corePlugins: {
+    container: false
+   },
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
@@ -87,5 +90,8 @@ module.exports = {
     "visited",
     "disabled",
   ],
-  plugins: [require("@tailwindcss/custom-forms")],
+  plugins: [require("@tailwindcss/custom-forms"),
+  require('tailwind-bootstrap-grid')({
+    containerMaxWidths: { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
+  }),],
 };
